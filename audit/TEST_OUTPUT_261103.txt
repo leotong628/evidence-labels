@@ -1,0 +1,17 @@
+$ cd evidence-labels && python3 -I -m unittest discover -s tests -v
+# python: 3.13.18, uid=0, 2026-11-03T14:22Z
+test_help_exits_zero (test_repo_validity.CliHelp.test_help_exits_zero) ... ok
+test_relative_links_resolve (test_repo_validity.MarkdownLinks.test_relative_links_resolve) ... ok
+test_allow_list_has_no_stale_entries (test_repo_validity.SecretsScan.test_allow_list_has_no_stale_entries) ... ok
+test_no_secrets_or_personal_identifiers (test_repo_validity.SecretsScan.test_no_secrets_or_personal_identifiers) ... ok
+test_scan_detects_known_shapes (test_repo_validity.SecretsScan.test_scan_detects_known_shapes)
+Guard against a silently broken scanner (fixtures are built at run time, not stored). ... ok
+test_every_skill_has_name_and_description (test_repo_validity.SkillFrontMatter.test_every_skill_has_name_and_description) ... ok
+test_skill_present_when_required (test_repo_validity.SkillFrontMatter.test_skill_present_when_required) ... ok
+test_actions_pinned_by_full_sha (test_repo_validity.WorkflowPins.test_actions_pinned_by_full_sha) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.014s
+
+OK
+exit code: 0
